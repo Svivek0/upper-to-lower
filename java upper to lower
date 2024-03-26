@@ -1,0 +1,16 @@
+class convert_first_letter_of_sentence_to_uppercase{
+    public static void main(String[] args) {
+        String x="geeks for geeks";
+          char ch2=Character.toUpperCase(x.charAt(0));
+        String h="";
+        for(int i=1;i<x.length();i++){
+             if(x.charAt(i-1)==' '){
+                char ch1=Character.toUpperCase(x.charAt(i));
+                h=h+ch1;
+             }
+             else{
+                 h=h+x.charAt(i);
+             }
+         }
+        System.out.println(ch2+h);
+    }
